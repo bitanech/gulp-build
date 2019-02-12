@@ -43,6 +43,8 @@ const cleanDist = () => {
 };
 
 function defaultTask(cb) {
+    scssToCss();
+    minifyCss();
     cb();
 }
 
